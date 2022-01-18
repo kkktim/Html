@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert SVG</title>
+    <script src="modernizr-custom.js"></script>
+</head>
+<body>
+    <h1>SVG 이미지 사입하기</h1>
+    <img src="/Book/Ch03.이미지와 하이퍼링크/Car.svg">
+    <script>
+        if(!Modernizr.svg){
+            $("img").attr("src", "/Book/Ch03.이미지와 하이퍼링크/Car.svg")
+        }
+    </script>
+</body>
+</html>
