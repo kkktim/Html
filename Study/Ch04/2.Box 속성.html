@@ -1,0 +1,146 @@
+<!--
+    날짜 : 2022/01/19
+    이름 : 강태호
+    내용 : CSS Box 속성 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.Box 속성</title>
+    <style>
+        /*
+            1) width, height 속성
+             - block, inline-block 태그르 가로, 세로 크기 지정
+             - px, % 단위 사용
+
+            2) margin, padding 속성
+             - 태그의 바깥 여백, 안쪽 여백 지정
+             - 12시, 3시, 6시, 9시 방향으로 각 개별 값 지정
+
+            3) border 속성
+             - 태그의 테두리 지정
+             - 테두리 크기, 모양, 색 지정
+
+            4) box-sizing 속성
+             - 고정된 width, height를 기준으로 padding, border를 적용
+        */
+        section > div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
+
+        section:nth-of-type(1) > div:first-child {
+            width: 50px;
+            height: 50px;
+        }
+
+        section:nth-of-type(1) > div:nth-child(2) {
+            width: 10%;    /* 브라우저폭에 10%임. 브라우저 움직이면 따라 움직임 */
+            height: 10%;   /* 높이를 가지로 상대크기를 측정할수없다 (스크롤이 있으니까) */
+        }
+
+        section:nth-of-type(2) > div:nth-child(1) {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        section:nth-of-type(2) > div:nth-child(2) {
+            margin: 10px 20px;
+            padding: 10px 20px;
+        }
+        section:nth-of-type(2) > div:nth-child(3) {
+            margin: 10px 20px 30px;
+            padding: 10px 20px 30px;
+        }
+        section:nth-of-type(2) > div:nth-child(4) {
+            margin: 10px 20px 30px 40px;
+            padding: 10px 20px 30px 40px;
+        }
+        section:nth-of-type(2) > div:nth-child(5) {
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+
+        section:nth-of-type(2) > div:last-child {
+            display: block;
+            margin: 0 auto;   /*0은 px 생략 가능*/
+        }
+
+        section:nth-of-type(3) > div:nth-child(1) {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        section:nth-of-type(3) > div:nth-child(2) {
+            border: 1px solid black
+        }
+
+        section:nth-of-type(3) > div:nth-child(3) {
+            border: 10px dashed skyblue;
+        }
+
+        section:nth-of-type(4) > div:nth-child(1) {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        section:nth-of-type(4) > div:nth-child(2) {
+            padding: 10px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        section:nth-of-type(4) > div:nth-child(3) {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h3>2.Box 속성(크기, 여백, 테두리)</h3>
+
+    <h4>1) width, height 속성</h4>
+    <section>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </section>
+
+    <h4>2) margin, padding 속성</h4>
+    <section>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+    </section>
+
+    <h4>3) border 속성</h4>
+    <section>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </section>
+
+    <h4>4) box-sizing 속성</h4>
+    <section>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </section>
+
+</body>
+</html>
