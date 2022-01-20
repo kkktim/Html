@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.Position 연습</title>
+    <style>
+        section{
+            display: inline-block;
+        }
+        section > div{
+            width: 300px;
+            height: 300px;
+            border: 1px dashed black;
+        }
+        /*1번*/
+        .box1 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: right;
+        }
+        /*2번*/
+        .box2{position: relative;}
+        .box2 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+        }
+
+        /*3번*/
+        .box3{position: relative;}
+        .box3 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            right: 0px;
+        }
+        .box3 > div > div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        /*4번*/
+        .box4{position: relative;}
+        .box4 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            bottom: 0px;
+        }
+        .box4 > div > div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        /*5번*/
+        .box5{position: relative;}
+        .box5 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+        }
+        .box5 > div > div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+
+        /*6번*/
+        .box6{position: relative;}
+        .box6 > div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        .box6 > div > div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        /*7번*/
+        .box7{}
+        .box7 > div {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+        .box7 > div:nth-child(1){background: red; margin-left: 100px;}
+        .box7 > div:nth-child(2){background: green; clear: left;}
+        .box7 > div:nth-child(3){background: blue; float: right;}
+        .box7 > div:nth-child(4){background: orange; clear: left; margin-left: 100px;}
+
+        /*8번*/
+        .box8 {position: relative;}
+        .box8 > div{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .box8 > div:nth-child(1){background: red; left: 0; top: 0;}
+        .box8 > div:nth-child(2){background: green; right: 0;}
+        .box8 > div:nth-child(3){background: orange; top: 100px; left: 100px;}
+        .box8 > div:nth-child(4){background: pink; bottom: 0;}
+        .box8 > div:nth-child(5){background: blue; right: 0; bottom: 0;}
+        
+        /*9번*/
+        .box9 > div {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box9 > div:nth-child(1){background: red;}
+        .box9 > div:nth-child(2){background: green;}
+        .box9 > div:nth-child(3){background: blue; clear: left;}
+
+        /*10번*/
+        .box10 > div {
+            float: right;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box10 > div:nth-child(1){background: red;}
+        .box10 > div:nth-child(2){background: green;}
+        .box10 > div:nth-child(3){background: blue; clear: right;}
+
+        /*11번*/
+        .box11 > div {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box11 > div:nth-child(1){background: red;}
+        .box11 > div:nth-child(2){background: green;}
+        .box11 > div:nth-child(3){background: blue;}
+        .box11 > div:nth-child(4){background: yellow;}
+        .box11 > div:nth-child(5){background: pink;}
+        .box11 > div:nth-child(6){background: greenyellow; clear: left;}
+
+    </style>
+</head>
+<body>
+    
+    <section>
+    <h3>1.다음과 같이 positioning을 하세요.</h3>
+    <div class="box1">
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>2.다음과 같이 positioning을 하세요.</h3>
+    <div class="box2">
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>3.다음과 같이 positioning을 하세요.</h3>
+    <div class="box3">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <section>
+    <h3>4.다음과 같이 positioning을 하세요.</h3>
+    <div class="box4">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <section>
+    <h3>5.다음과 같이 positioning을 하세요.</h3>
+    <div class="box5">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <section>
+    <h3>6.다음과 같이 positioning을 하세요.</h3>
+    <div class="box6">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    </section>
+    <section>
+    <h3>7.다음과 같이 positioning을 하세요.</h3>
+    <div class="box7">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>8.다음과 같이 positioning을 하세요.</h3>
+    <div class="box8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>9.다음과 같이 positioning을 하세요.</h3>
+    <div class="box9">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>10.다음과 같이 positioning을 하세요.</h3>
+    <div class="box10">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+    <section>
+    <h3>11.다음과 같이 positioning을 하세요.</h3>
+    <div class="box11">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </section>
+</body>
+</html>
