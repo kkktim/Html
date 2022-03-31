@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>케이마켓::결제완료</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
     <div id="wrapper">
@@ -30,7 +31,7 @@
             </div>
             <div class="hd">
                 <div>
-                    <a href="#" class="logo"><img src="./img/header_logo.png" alt="로고"></a>
+                    <a href="#" class="logo"><img src="../img/header_logo.png" alt="로고"></a>
                     <form action="#">
                         <input type="text" name="search">
                         <button type="submit">
@@ -59,8 +60,87 @@
         </header>
 
         <main>
-            <aside></aside>
-            <section id="product-complete"></section>
+            <aside>
+                <ul class="category">
+                    <li>
+                        <i class="fas fa-bars"></i>
+                        카테고리
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tshirt"></i>
+                            패션-의류-뷰티
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ol style="display: none;">
+                            <li>남성의류</li>
+                            <li>여성의류</li>
+                            <li>잡화</li>
+                            <li>뷰티</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-laptop"></i>
+                            가전-디지털
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ol style="display: none;">
+                            <li>노트북/PC</li>
+                            <li>휴대폰</li>
+                            <li>카메라</li>
+                            <li>가전</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-utensils"></i>
+                            식품-생필품
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ol style="display: none;">
+                            <li>신선식품</li>
+                            <li>가공식품</li>
+                            <li>건강식품</li>
+                            <li>생필품</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            홈-문구-취미
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ol style="display: none;">
+                            <li>가구/DIY</li>
+                            <li>침구.커튼</li>
+                            <li>생활용품</li>
+                            <li>사무용품</li>
+                        </ol>
+                    </li>
+                </ul>
+            </aside>
+            <section id="product-complete">
+                <nav>
+                    <h1>주문완료</h1>
+                    <p>
+                        HOME > <span>장바구니</span> > <span>주문결제</span> > <strong>주문완료</strong>
+                    </p>
+                </nav>
+                <section>
+                    <article class="product">
+                        <h1>상품정보</h1>
+                    </article>
+                    <article class="order">
+                        <h1>주문정보</h1>
+                    </article>
+                    <article class="delivery">
+                        <h1>배송정보</h1>
+                    </article>
+                    <article class="alert">
+                        <h1>꼭 알아두세요.</h1>
+                    </article>
+                </section>
+            </section>
         </main>
         
         <footer>
