@@ -1,0 +1,5 @@
+#fullpage > #section0 {}
+#fullpage > .section >  div > h1{
+    visibility: hidden;
+}
+/* #section0 > div > h1 */

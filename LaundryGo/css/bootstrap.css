@@ -1,7 +1,6 @@
-#fullpage > nav > div > a {
+body > nav > div > a {
   color: white;
 }
-
 #navbarNav > ul > li > a {
   color: white;
 }
