@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+
+    <script type="text/javascript" src="./js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullpage.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          navigation: true,
+          scrollingSpeed: 1000,
+          //페이지 이동 시작
+          // onLeave: function (origin, destination, direction, trigger) {
+          //   console.log(onLeave);
+          //   if (origin.index == 1) {
+          //     $("#section0 > div > h1").hide();
+          //   }
+          // },
+          //다음 페이지 도착
+          afterLoad: function (origin, destination, direction, trigger) {
+            console.log("afterload");
+
+            if (destination.index == 1) {
+              $("#section1 > div > h1").show();
+            }
+          },
+        });
+      });
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1" href="#">LaundryGo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item fs-5">
+              <a class="nav-link active" aria-current="page" href="#"
+                >런드리고</a
+              >
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="#">이용방법</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="#">이벤트·공지</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link disabled">회사 소개</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FullPage -->
+    <div id="fullpage">
+      <!--first page -->
+      <div class="section fp-auto-height" id="section0">
+        <h1>세탁 없는 하루의 3시간</h1>
+      </div>
+      <!--second page -->
+      <div class="section" id="section1">
+        <h1>Second Page!</h1>
+      </div>
+      <!--third page -->
+      <div class="section" id="section2">
+        <h1>No wraps, no extra markup</h1>
+      </div>
+      <!--fourth page -->
+      <div class="section" id="section3">
+        <h1>Just the simplest demo ever</h1>
+      </div>
+      <!--fifth page -->
+      <div class="section" id="section4">
+        <h1>Just the simplest demo ever</h1>
+      </div>
+      <!--sixth page -->
+      <div class="section" id="section5">
+        <h1>Just the simplest demo ever</h1>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
