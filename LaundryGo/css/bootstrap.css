@@ -4,3 +4,68 @@ body > nav > div > a {
 #navbarNav > ul > li > a {
   color: white;
 }
+
+/* Set the border color to the desired color */
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.651);
+}
+
+/* Set footer */
+.css-7qd7vk {
+  position: fixed;
+  position: absolute;
+  bottom: 0px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  color: rgba(255, 255, 255);
+}
+.css-7qd7vk > div.footer-info {
+  min-width: 49rem;
+  white-space: nowrap;
+}
+.css-7qd7vk > div h1 {
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0px 0px 12px;
+}
+.css-7qd7vk p {
+  font-size: 1.4rem;
+}
+.css-7qd7vk p > span {
+  position: relative;
+}
+.css-7qd7vk .link {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+
+.css-7qd7vk > div.footer-company {
+  min-width: 45rem;
+}
+
+.css-7qd7vk > div.footer-company .footer-anchor-wrap {
+  display: block;
+  margin-top: 0.7rem;
+}
+.css-7qd7vk
+  > div.footer-company
+  .footer-anchor-wrap
+  .footer-anchor.personal-info {
+  font-weight: bold;
+}
+.css-7qd7vk > div.footer-company .footer-anchor-wrap .footer-anchor {
+  margin-right: 10px;
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+
+.css-7qd7vk .corp {
+  position: absolute;
+  right: 4rem;
+  bottom: 3.5rem;
+  margin: 0px;
+  font-size: 1.6rem;
+}

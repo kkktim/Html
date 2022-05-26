@@ -1,5 +1,95 @@
-#fullpage > #section0 {}
-#fullpage > .section >  div > h1{
-    visibility: hidden;
+#fullpage > #section0 {
+}
+#fullpage > section > div > h1 {
 }
 /* #section0 > div > h1 */
+
+/* section h1 */
+#section0 > div > h1 {
+  position: absolute;
+  top: 45%;
+  right: 25%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#section1 > div > h1:nth-child(1) {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#section1 > div > h1:nth-child(2) {
+  position: absolute;
+  top: 51.5%;
+  left: 26%;
+  color: white;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+#section2 > div > h1:nth-child(1) {
+  position: absolute;
+  top: 38%;
+  left: 15%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#section2 > div > h1:nth-child(2) {
+  position: absolute;
+  top: 44%;
+  left: 15%;
+  color: white;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+#section3 > div > h1:nth-child(1) {
+  position: absolute;
+  top: 45%;
+  right: 15%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#section3 > div > h1:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+#section4 > div > h1:nth-child(1) {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+#section4 > div > h1:nth-child(2) {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+#section5 > div > h1:nth-child(1) {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+#section5 > div > h1:nth-child(2) {
+  position: absolute;
+  top: 45%;
+  right: 21%;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}

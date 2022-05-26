@@ -210,8 +210,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.left {
   left: 20px;
 }
-.fp-auto-height.fp-section {
-  height: 913px;
+.fp-auto-height .fp-section {
 }
 .fp-auto-height .fp-slide,
 .fp-auto-height .fp-tableCell {
@@ -223,22 +222,23 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important;
 }
+
 /* 커스텀 */
 #section0 {
-  background-image: url(/LaundryGo/img/main_windowSunset.jpg);
+  background-image: url(/img/main_windowSunset.jpg);
 }
 #section1 {
-  background-image: url(/LaundryGo/img/main_running.jpg);
+  background-image: url(/img/main_running.jpg);
 }
 #section2 {
-  background-image: url(/LaundryGo/img/main_readingBook.jpg);
+  background-image: url(/img/main_readingBook.jpg);
 }
 #section3 {
-  background-image: url(/LaundryGo/img/main_tea.jpg);
+  background-image: url(/img/main_tea.jpg);
 }
 #section4 {
-  background-image: url(/LaundryGo/img/main_pilates.jpg);
+  background-image: url(/img/main_pilates.jpg);
 }
 #section5 {
-  background-image: url(/LaundryGo/img/main_mobile.jpg);
+  background-image: url(/img/main_mobile.jpg);
 }
